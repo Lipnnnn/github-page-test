@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  publicPath: process.env.NODE_ENV === 'production' ? '/github-page-test/' : '/',
+  base: '/github-page-test/',
   plugins: [
     vue(),
     vueDevTools(),
